@@ -4,7 +4,7 @@
         <!-- Background Image with Mask -->
         <div class="absolute inset-0">
             <img src="{{ asset('images/banner.jpg') }}" alt="4 Get The Scoop - Ice Cream Truck Catering" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-pink-600/70"></div>
+            <div class="absolute inset-0 bg-white/30"></div>
         </div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
             <div class="text-center">
