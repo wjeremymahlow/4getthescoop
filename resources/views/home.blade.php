@@ -35,7 +35,7 @@
 
     <!-- Image Banner -->
     <section class="w-full flex justify-center py-8">
-        <img src="{{ asset('images/about-banner.jpg') }}" alt="4 Get The Scoop Ice Cream Truck" class="w-1/8 h-auto" style="width: 12.5%;">
+        <img src="{{ asset('images/about-banner.jpg') }}" alt="4 Get The Scoop Ice Cream Truck" class="w-1/4 h-auto">
     </section>
 
     <!-- About Section -->
