@@ -33,6 +33,11 @@
         </div>
     </section>
 
+    <!-- Image Banner -->
+    <section class="w-full">
+        <img src="{{ asset('images/about-banner.jpg') }}" alt="4 Get The Scoop Ice Cream Truck" class="w-full h-auto">
+    </section>
+
     <!-- About Section -->
     <section class="py-16 md:py-24" id="about">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
