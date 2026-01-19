@@ -8,10 +8,10 @@
         </div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
             <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 text-black">
                     Sweet Treats for Your Special Events
                 </h1>
-                <p class="text-xl md:text-2xl mb-8 text-pink-100">
+                <p class="text-xl md:text-2xl mb-8 text-black">
                     Ice cream truck catering in Knoxville, TN
                 </p>
                 @auth
@@ -22,7 +22,7 @@
                     <a href="{{ route('register') }}" class="inline-block bg-white text-pink-600 px-8 py-4 rounded-lg text-lg font-bold hover:bg-pink-100 transition shadow-lg">
                         Book Your Event
                     </a>
-                    <p class="mt-4 text-pink-100 text-sm">Create a free account to request a quote</p>
+                    <p class="mt-4 text-black text-sm">Create a free account to request a quote</p>
                 @endauth
             </div>
         </div>
