@@ -1,17 +1,17 @@
 <x-public-layout>
-    <!-- Hero Section -->
-    <section class="relative text-white">
-        <!-- Background Image -->
-        <div class="absolute inset-0">
-            <img src="{{ asset('images/hero.jpg') }}" alt="4 Get The Scoop Ice Cream Truck" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-pink-600/70"></div>
-        </div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+    <!-- Banner Image -->
+    <section class="w-full">
+        <img src="{{ asset('images/banner.jpg') }}" alt="4 Get The Scoop - Ice Cream Truck Catering" class="w-full h-auto">
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gradient-to-r from-pink-500 to-pink-600 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                <h1 class="text-3xl md:text-4xl font-bold mb-4">
                     Sweet Treats for Your Special Events
                 </h1>
-                <p class="text-xl md:text-2xl mb-8 text-pink-100">
+                <p class="text-lg md:text-xl mb-6 text-pink-100">
                     Ice cream truck catering in Knoxville, TN
                 </p>
                 @auth
@@ -25,11 +25,6 @@
                     <p class="mt-4 text-pink-100 text-sm">Create a free account to request a quote</p>
                 @endauth
             </div>
-        </div>
-        <div class="absolute bottom-0 left-0 right-0">
-            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
-            </svg>
         </div>
     </section>
 
