@@ -9,9 +9,16 @@
                 <p class="text-xl md:text-2xl mb-8 text-pink-100">
                     Ice cream truck catering in Knoxville, TN
                 </p>
-                <a href="{{ route('catering.create') }}" class="inline-block bg-white text-pink-600 px-8 py-4 rounded-lg text-lg font-bold hover:bg-pink-100 transition shadow-lg">
-                    Book Your Event
-                </a>
+                @auth
+                    <a href="{{ route('catering.create') }}" class="inline-block bg-white text-pink-600 px-8 py-4 rounded-lg text-lg font-bold hover:bg-pink-100 transition shadow-lg">
+                        Book Your Event
+                    </a>
+                @else
+                    <a href="{{ route('register') }}" class="inline-block bg-white text-pink-600 px-8 py-4 rounded-lg text-lg font-bold hover:bg-pink-100 transition shadow-lg">
+                        Book Your Event
+                    </a>
+                    <p class="mt-4 text-pink-100 text-sm">Create a free account to request a quote</p>
+                @endauth
             </div>
         </div>
         <div class="absolute bottom-0 left-0 right-0">
@@ -132,9 +139,16 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Book Your Event?</h2>
             <p class="text-xl text-pink-100 mb-8">Let's make your celebration unforgettable!</p>
-            <a href="{{ route('catering.create') }}" class="inline-block bg-white text-pink-600 px-8 py-4 rounded-lg text-lg font-bold hover:bg-pink-100 transition shadow-lg">
-                Request a Quote
-            </a>
+            @auth
+                <a href="{{ route('catering.create') }}" class="inline-block bg-white text-pink-600 px-8 py-4 rounded-lg text-lg font-bold hover:bg-pink-100 transition shadow-lg">
+                    Request a Quote
+                </a>
+            @else
+                <a href="{{ route('register') }}" class="inline-block bg-white text-pink-600 px-8 py-4 rounded-lg text-lg font-bold hover:bg-pink-100 transition shadow-lg">
+                    Request a Quote
+                </a>
+                <p class="mt-4 text-pink-100">Create a free account to request your personalized quote</p>
+            @endauth
         </div>
     </section>
 </x-public-layout>
