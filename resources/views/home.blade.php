@@ -1,7 +1,12 @@
 <x-public-layout>
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-r from-pink-500 to-pink-600 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+    <section class="relative text-white">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="{{ asset('images/hero.jpg') }}" alt="4 Get The Scoop Ice Cream Truck" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-pink-600/70"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
             <div class="text-center">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6">
                     Sweet Treats for Your Special Events
